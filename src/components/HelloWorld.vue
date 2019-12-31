@@ -27,6 +27,12 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <h3>Test GA</h3>
+    <ul>
+      <li>
+        <button v-on:click="testGoogleAnalyticsButtonPressed" class="testing-google-analytics">Test Google Analytics</button>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -35,6 +41,12 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods: {
+    testGoogleAnalyticsButtonPressed () {
+      // eslint-disable-next-line no-console
+      console.log(`testGoogleAnalyticsButtonPressed`)
+    }
   }
 }
 </script>
